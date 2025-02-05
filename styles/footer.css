@@ -1,0 +1,50 @@
+footer {
+  display: flex;
+ 
+  /* Caixa de aviso */
+  & .alertBox {
+    display: none;
+    background-color: var(--brand-color-danger);
+    padding: 12px;
+    border-radius: 12px;
+    position: fixed;
+    bottom: 20px;
+    box-shadow: 
+      0 2px 5px rgb(0 0 0 / .1),
+      0 9px 9px rgb(0 0 0 / .09),
+      0 20px 12px rgb(0 0 0 / .05),
+      0 36px 15px rgb(0 0 0 / .01)
+    ;
+    
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+
+  }
+  
+  /* Icone de alerta da caixa de avisos */
+  & .alertIcon {
+    background-image: url(../assets/icons/warning.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+
+  /* Texto de aviso */
+  & span {
+    color: var(--always-white);
+    padding-inline: 12px;
+  }
+  
+  /* Botão fechar da caixa de aviso */
+  & .closeButton {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 13px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+

@@ -1,0 +1,127 @@
+main {
+  display: flex;
+  padding-top: 62px;
+  
+  & a {
+    text-decoration: none;
+    padding-bottom: 16px;
+  }
+
+  & h1 {
+    padding-bottom: 44px;
+  }
+
+  & form {
+    margin-bottom: 20px;
+
+    & input {
+      min-width: 326px;
+      height: 44px;
+      padding: 11px 18px;
+      border-radius: 12px;
+      border-color: var(--border-primary);
+      background-color: var(--bg-secondary);
+      
+      &:hover,
+      &:focus {
+        border-color: var(--border-hover);
+      }
+      
+      &:active {
+        border-style: none;
+        border-color: var(--brand-color);
+      }
+    }
+
+    & button {
+      margin-top: 24px;
+
+      &:hover,
+      &:focus {
+        background-color: var(--brand-color-hover);
+      }
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    padding-bottom: 48px;
+
+    & li {
+      display: flex;
+      position: relative;
+      background-color: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 8px;
+      gap: 12px;
+      align-items: center;
+      
+      & input {
+        all:unset;
+        background-image: url(../assets/icons/check-default.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 8px;
+
+        &:focus,
+        &:hover {
+          all: unset;
+          padding: 8px;
+          background-image: url(../assets/icons/check-hover.svg);
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+      }
+
+      &.checked {
+        text-decoration: line-through;  /*fazer riscar o item selecionado na lista*/
+        
+        & input {
+          background-image: url(../assets/icons/check-selected.svg);
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+      }
+      
+      & button {
+        all: unset;
+        background-image: url(../assets/icons/trash.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 8px;
+        position: absolute;
+        right: 12px;
+        
+        &:focus,
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 80em) {
+  & form {
+    display: grid;
+    position: relative;
+    justify-content: space-between;
+    padding: 24px;
+    align-items: center;
+    
+    & input {
+      position: absolute;
+
+      --max-width: 80em;
+      width: min(var(--max-width), 70%);
+    }
+
+    & button {
+     position: absolute;
+     right: 0px;
+     top: -22px;
+    }
+  }
+}

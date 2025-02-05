@@ -1,0 +1,57 @@
+.btn {
+  cursor: pointer;
+  width: 326px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 107px;
+  background-color: var(--brand-color);
+}
+
+.container {
+  --max-width: 428px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-cols-3 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.items-center {
+  align-items: center;
+}
+
+@media (width >= 80em) {
+
+  .btn {
+    width: 160px;
+    height: 44px;
+    padding: 12px 24px;
+  }
+
+  .container {
+    --max-width: 80em;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+}
