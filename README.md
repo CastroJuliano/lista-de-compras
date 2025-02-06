@@ -1,5 +1,5 @@
 <h1 align="center">
-  quicklist </>
+<img alt="Logo quicklist" src="github/logo.png" width="50%">
 </h1>
 
 <p align="center">
@@ -11,6 +11,8 @@ quicklist é um aplicativo de lista de compras onde o usuário pode:
 - Marcar itens comprados
 - Remover itens existentes na lista 
 
+
+</br>
 Esse é um dos desafios práticos da formação Fullstack, um dos conteúdos disponíveis para alunos da Rocketseat. 
 </p>
 
