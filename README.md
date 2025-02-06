@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="Logo quicklist" src="github/logo.png" width="50%">
+<img alt="Logo quicklist" src="github/logo.png">
 </h1>
 
 <p align="center">
