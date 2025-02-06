@@ -1,10 +1,8 @@
 .btn {
   cursor: pointer;
-  width: 326px;
   height: 44px;
   border: none;
   border-radius: 12px;
-  padding: 12px 107px;
   background-color: var(--brand-color);
 }
 
@@ -43,7 +41,6 @@
   .btn {
     width: 160px;
     height: 44px;
-    padding: 12px 24px;
   }
 
   .container {

@@ -11,9 +11,9 @@ main {
     padding-bottom: 44px;
   }
 
-  & form {
+  & #inputData {
     margin-bottom: 20px;
-
+  
     & input {
       min-width: 326px;
       height: 44px;
@@ -104,7 +104,7 @@ main {
 }
 
 @media (width >= 80em) {
-  & form {
+  & #inputData {
     display: grid;
     position: relative;
     justify-content: space-between;
@@ -121,7 +121,8 @@ main {
     & button {
      position: absolute;
      right: 0px;
-     top: -22px;
+     transform: translateY(-28%);
+     width: 160px;
     }
   }
 }
