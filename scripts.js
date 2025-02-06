@@ -1,4 +1,4 @@
-document.getElementById("addItemButton").addEventListener("click", function (event) {
+document.getElementById("addItemButton").addEventListener("click", function(event) {
   event.preventDefault(); // Previne o comportamento padrão
 
   addItem();  // Chama a função para adicionar o item
@@ -33,12 +33,12 @@ function addItem() {
   `;
 
   // Marcar item como comprado
-  li.querySelector(".checkItem").addEventListener("change", function () {
+  li.querySelector(".checkItem").addEventListener("change", function() {
     li.classList.toggle("checked");
   });
 
   // Remover item e exibir a caixa de aviso
-  li.querySelector(".remove").addEventListener("click", function () {
+  li.querySelector(".remove").addEventListener("click", function() {
     ul.removeChild(li);
 
     // Exibir a caixa de aviso
@@ -46,7 +46,7 @@ function addItem() {
     alertBox.style.display = 'block';
 
     // Esconder a caixa de aviso após 3 segundos
-    setTimeout(function () {
+    setTimeout(function() {
       alertBox.style.display = 'none';
     }, 5000);
   });
